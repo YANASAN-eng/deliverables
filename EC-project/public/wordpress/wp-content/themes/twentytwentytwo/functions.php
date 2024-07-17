@@ -101,3 +101,79 @@ function create_product_post_type()
 	register_post_type('product', $args);
 }
 add_action('init', 'create_product_post_type');
+
+/**
+ * 分類
+ * 
+ * @param void
+ * @return void
+ */
+function create_category_post_type()
+{
+	$labels = array(
+		'name' => '分類',
+		'singular_name' => '分類',
+		'menu_name' => '分類',
+		'add_new' => '新規',
+		'add_new_item' => '追加された分類',
+		'new_item' => '新規分類',
+		'edit_item' => '分類編集',
+		'view_item' => '分類詳細',
+		'all_items' => 'すべての分類',
+		'search_items' => '分類検索',
+	);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => '分類'),
+		'capability_type' => 'post',
+		'has_archive' => true,
+		'hierarchical' => false,
+		'menu_position' => 6,
+		'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments')
+	);
+	register_post_type('category', $args);
+}
+add_action('init', 'create_category_post_type');
+
+/**
+ * 本
+ * 
+ * @param void
+ * @return void
+ */
+function create_book_post_type()
+{
+	$labels = array(
+		'name' => '本',
+		'singular_name' => '本',
+		'menu_name' => '本',
+		'add_new' => '新規',
+		'add_new_item' => '追加された本',
+		'new_item' => '新規本',
+		'edit_item' => '本編集',
+		'view_item' => '本詳細',
+		'all_items' => 'すべての本',
+		'search_items' => '本検索',
+	);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => '本'),
+		'capability_type' => 'post',
+		'has_archive' => true,
+		'hierarchical' => false,
+		'menu_position' => 7,
+		'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments')
+	);
+	register_post_type('book', $args);
+}
+add_action('init', 'create_book_post_type');

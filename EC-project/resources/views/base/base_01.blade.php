@@ -5,8 +5,6 @@
         <title>@yield('title')</title>
         <!-- 独自のcss -->
          <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-         <!-- 独自のjs -->
-          <script type="text/javascript" src ="{{ asset('js/main.js') }}"></script>
         <!-- boot strap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -28,7 +26,7 @@
                     <li>
                         <div id="about" class="navWithIndent">
                             <span>バッカススタジオについて</span>
-                            <div class="">
+                            <div>
                                 <a href=""><span>ストーリー</apan></a>
                                 <a href=""><span>遊び方について</apan></a>
                                 <a href=""><span>お客様の声</span></a>
@@ -59,5 +57,7 @@
                 </div>
             </nav>
         </header>
+        <!-- 独自のjs -->
+        <script type="text/javascript" src ="{{ asset('js/main.js') }}"></script>
     </body>
 </html>

@@ -34,6 +34,16 @@ header nav #logoBlock #headerLogo {
     margin: auto;
     width: auto;
 }
+header nav ul {
+    display: block;
+    list-style: none;
+    margin-block-start: 1rem;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
 /* PCの場合に適用するstyle*/
 @media screen and (min-width: 760)
 {
@@ -48,6 +58,29 @@ header nav #logoBlock #headerLogo {
         margin-left: 50%;
         transform: translateX(-50%);
     }
+    header nav ul {
+        background: rgba(0, 0, 0, 0.9);
+        display: block;    
+        min-width: initial;
+        margin: 72px 0;
+        height: calc(100vh - 64px);
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        transform: translateX(100vw);
+        width: 100vw;
+    }
+    header nav ul.active {
+        opacity: 1;
+        overflow-y: scroll;
+        transform: translateX(0);
+    }
+    header nav ul li {
+        border-bottom: 1px solid white;
+        margin: 10px auto;
+        padding: 10px 0;
+        width: 80%;
+    }
     #hamburgerBtn {
         align-items: center;
         box-sizing: border-box;
@@ -56,9 +89,13 @@ header nav #logoBlock #headerLogo {
         height: 72px;
         justify-content: space-evenly;
         padding: 10px 0;
+        position: absolute;
         right: 10px;
         top: 0px;
         width: 72px;
+    }
+    #hamburgerBtn:hover {
+        cursor: pointer;
     }
     #hamburgerBtn span {
         background: white;
@@ -67,5 +104,17 @@ header nav #logoBlock #headerLogo {
         height: 3px;
         transition: all 0.5s ease;
         width: 60%;
+    }
+    #hamburgerBtn.active span:nth-child(1) {
+        position: absolute;
+        transform: rotate(225deg);
+    }
+    #hamburgerBtn.active span:nth-child(2) { 
+        position: relative;
+        transform: translateX(200px);
+    }
+    #hamburgerBtn.active span:nth-child(3) {
+        position: absolute;
+        transform: rotate(-225deg);
     }
 }

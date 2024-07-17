@@ -13,3 +13,4 @@
 [14-Jul-2024 00:32:56 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /src/public/wordpress/wp-content/plugins/wp-rest-api-controller/admin/class-wp-rest-api-controller-admin.php on line 123
 [14-Jul-2024 00:33:34 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /src/public/wordpress/wp-content/plugins/wp-rest-api-controller/admin/class-wp-rest-api-controller-admin.php on line 123
 [14-Jul-2024 00:35:59 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /src/public/wordpress/wp-content/plugins/wp-rest-api-controller/admin/class-wp-rest-api-controller-admin.php on line 123
+[14-Jul-2024 02:13:33 UTC] PHP Warning:  予期しないエラーが発生しました。WordPress.org かこのサーバーの設定に何か問題があるかもしれません。問題が続くようであれば、<a href="https://ja.wordpress.org/support/forums/">サポートフォーラム</a>を参照してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /src/public/wordpress/wp-admin/includes/translation-install.php on line 62
