@@ -6,9 +6,9 @@ const navWithIndent = document.querySelectorAll('.navWithIndent');
 hamburgerBtn.addEventListener('click', toogleHamburgerMenu);
 headerNavUILiAs.forEach(elem => elem.addEventListener('click', toogleHamburgerMenu));
 
-navWithIndent.forEach(elem => elem.addEventListener('clcik', (event) => {
-    elem.classList.toogle('open');
-} ))
+navWithIndent.forEach(elem => elem.addEventListener("click", (e) => {
+    elem.classList.toggle("open");
+}))
 
 /*
 ハンバーガーメニューの動作を決める処理

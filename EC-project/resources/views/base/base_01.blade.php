@@ -20,17 +20,17 @@
                 <ul>
                     <!-- お知らせ -->
                     <li>
-                        <a href=""><span>お知らせ</span></a>
+                        <a href=""><span class="menu bgleft">お知らせ</span></a>
                     </li>
                     <!-- TO DO: 会社概要リンク -->
                     <li>
                         <div id="about" class="navWithIndent">
                             <span>バッカススタジオについて</span>
-                            <div>
-                                <a href=""><span>ストーリー</apan></a>
-                                <a href=""><span>遊び方について</apan></a>
-                                <a href=""><span>お客様の声</span></a>
-                                <a href=""><span>シリーズ</span></a>
+                            <div class="navIndent">
+                                <a href=""><span class="menu bgleft">ストーリー</apan></a>
+                                <a href=""><span class="menu bgleft">遊び方について</apan></a>
+                                <a href=""><span class="menu bgleft">お客様の声</span></a>
+                                <a href=""><span class="menu bgleft">シリーズ</span></a>
                             </div>
                         </div>
                     </li>
@@ -39,8 +39,8 @@
                         <div id="companyInfo" class="navWithIndent">
                             <span>会社情報</span>
                             <div class="navIndent">
-                                <a href=""><span>会社概要</span></a>
-                                <a href=""><span>目指す場所</span></a>
+                                <a href=""><span class="menu bgleft">会社概要</span></a>
+                                <a href=""><span class="menu bgleft">目指す場所</span></a>
                             </div>
                         </div>
                     </li>
